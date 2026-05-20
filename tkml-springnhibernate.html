@@ -683,13 +683,13 @@
 <p><a id="refheading1885181168461456"></a>
 <a id="vsdaoibatis11"></a></p>
 <h3 id="211-visual-studio-c-dao">2.1.1. <span style="color: #4f81bd">مشروع <bdi dir="ltr" class="odt-ltr-term">Visual Studio C#</bdi> لطبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>]</span></h3>
-<p>مشروع <bdi dir="ltr" class="odt-ltr-term">Visual Studio</bdi> لطبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] هو كما يلي:</p>
+<p>مشروع <bdi dir="ltr" class="odt-ltr-term">Visual Studio</bdi> لطبقة [dao] هو كما يلي:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000070E000002544BB5E9A8.png" width="680" height="224" style="display:inline-block; margin:4px;width:17.997cm;height:5.939cm;" class="odt-zoomable" data-zoom-src="images/100000000000070E000002544BB5E9A8.png" /></td></tr></table>
 
 <ul>
   <li>في [1]، المشروع ككل
     <ul>
-      <li>يحتوي المجلد [<bdi dir="ltr" class="odt-ltr-term">pam</bdi>] على فئات المشروع بالإضافة إلى تكوين كيان <bdi dir="ltr" class="odt-ltr-term">NHibernate</bdi>
+      <li>يحتوي المجلد [pam] على فئات المشروع بالإضافة إلى تكوين كيان <bdi dir="ltr" class="odt-ltr-term">NHibernate</bdi>
       </li>
       <li>يقوم ملفا [<bdi dir="ltr" class="odt-ltr-term">App.config</bdi>] و[<bdi dir="ltr" class="odt-ltr-term">Dao.xml</bdi>] بتكوين إطار عمل <bdi dir="ltr" class="odt-ltr-term">Spring/NHibernate.</bdi> سنحتاج إلى وصف محتويات هذين الملفين.
       </li>
@@ -736,10 +736,10 @@
   </li>
 </ul>
 <p><a id="refheading1885221168461456"></a></p>
-<h3 id="213-dao">2.1.3. <span style="color: #4f81bd">الكيانات في طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>]</span></h3>
+<h3 id="213-dao">2.1.3. <span style="color: #4f81bd">الكيانات في طبقة [dao]</span></h3>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004D6000001968213506A.png" width="619" height="203" style="display:inline-block; margin:4px;width:16.378cm;height:5.371cm;" class="odt-zoomable" data-zoom-src="images/10000000000004D6000001968213506A.png" /></td></tr></table>
 
-<p>تم تجميع الكيانات (الكائنات) المطلوبة لطبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] في مجلد [<bdi dir="ltr" class="odt-ltr-term">entities</bdi>] [1] الخاص بالمشروع. هذه الكيانات هي نفسها الموجودة في المشروع السابق (انظر القسم<a href="#nhibernate-demos-mapping"><u><span style="color: #0563c1"> 1.3.2</span></u></a>)، مع اختلاف واحد في ملفات تكوين <bdi dir="ltr" class="odt-ltr-term">NHibernate.</bdi> خذ على سبيل المثال ملف [<bdi dir="ltr" class="odt-ltr-term">Employee.hbm.xml</bdi>]:</p>
+<p>تم تجميع الكيانات (الكائنات) المطلوبة لطبقة [dao] في مجلد [<bdi dir="ltr" class="odt-ltr-term">entities</bdi>] [1] الخاص بالمشروع. هذه الكيانات هي نفسها الموجودة في المشروع السابق (انظر القسم<a href="#nhibernate-demos-mapping"><u><span style="color: #0563c1"> 1.3.2</span></u></a>)، مع اختلاف واحد في ملفات تكوين <bdi dir="ltr" class="odt-ltr-term">NHibernate.</bdi> خذ على سبيل المثال ملف [<bdi dir="ltr" class="odt-ltr-term">Employee.hbm.xml</bdi>]:</p>
 <ul>
   <li>في [2]، تم تكوين الملف ليتم تضمينه في تجميع المشروع
   </li>
@@ -974,9 +974,9 @@
       </li>
     </ul>
   </li>
-  <li>تحدد الأسطر 46-48 فئة التنفيذ لطبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>]
+  <li>تحدد الأسطر 46-48 فئة التنفيذ لطبقة [dao]
     <ul>
-      <li>السطر 46: سيتم تنفيذ طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] بواسطة فئة [<bdi dir="ltr" class="odt-ltr-term">PamdaoSpringNHibernate</bdi>] في مكتبة <bdi dir="ltr" class="odt-ltr-term">DLL</bdi> [<bdi dir="ltr" class="odt-ltr-term">pam-dao-spring-nhibernate</bdi>]. بعد إنشاء مثيل للفئة، سيتم تنفيذ طريقة <i><bdi dir="ltr" class="odt-ltr-term">init</bdi></i> الخاصة بالفئة على الفور. عند إغلاق حاوية <bdi dir="ltr" class="odt-ltr-term">Spring</bdi>، سيتم تنفيذ طريقة <i><bdi dir="ltr" class="odt-ltr-term">destroy</bdi></i> الخاصة بالفئة.
+      <li>السطر 46: سيتم تنفيذ طبقة [dao] بواسطة فئة [<bdi dir="ltr" class="odt-ltr-term">PamdaoSpringNHibernate</bdi>] في مكتبة <bdi dir="ltr" class="odt-ltr-term">DLL</bdi> [<bdi dir="ltr" class="odt-ltr-term">pam-dao-spring-nhibernate</bdi>]. بعد إنشاء مثيل للفئة، سيتم تنفيذ طريقة <i><bdi dir="ltr" class="odt-ltr-term">init</bdi></i> الخاصة بالفئة على الفور. عند إغلاق حاوية <bdi dir="ltr" class="odt-ltr-term">Spring</bdi>، سيتم تنفيذ طريقة <i><bdi dir="ltr" class="odt-ltr-term">destroy</bdi></i> الخاصة بالفئة.
       </li>
       <li>السطر 47: ستحتوي فئة [<bdi dir="ltr" class="odt-ltr-term">PamDaoSpringNHibernate</bdi>] على خاصية <i><bdi dir="ltr" class="odt-ltr-term">HibernateTemplate</bdi> </i>التي سيتم تهيئتها باستخدام خاصية <i><bdi dir="ltr" class="odt-ltr-term">HibernateTemplate</bdi> </i>من السطر 39.
       </li>
@@ -984,7 +984,7 @@
   </li>
 </ul>
 <p><a id="refheading1885261168461456"></a></p>
-<h3 id="215-dao">2.1.5. <span style="color: #4f81bd">تنفيذ طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>]</span></h3>
+<h3 id="215-dao">2.1.5. <span style="color: #4f81bd">تنفيذ طبقة [dao]</span></h3>
 <p><a id="refheading2522241168461456"></a></p>
 <h4 id="2151">2.1.5.1. <span style="color: #4f81bd">هيكل فئة التنفيذ</span></h4>
 <p>واجهة [<bdi dir="ltr" class="odt-ltr-term">IPamDao</bdi>] هي كما يلي:</p>
@@ -1004,9 +1004,9 @@
 </code></pre></div>
 
 <ul>
-  <li>السطر 1: نقوم باستيراد مساحة الاسم للكيانات في طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>].
+  <li>السطر 1: نقوم باستيراد مساحة الاسم للكيانات في طبقة [dao].
   </li>
-  <li>السطر 3: تقع طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] في مساحة اسم [<bdi dir="ltr" class="odt-ltr-term">Pam.Dao.Service</bdi>]. يمكن إنشاء العناصر الموجودة في مساحة اسم [<bdi dir="ltr" class="odt-ltr-term">Pam.Dao.Entities</bdi>] في مثيلات متعددة. يتم إنشاء العناصر الموجودة في مساحة اسم [<bdi dir="ltr" class="odt-ltr-term">Pam.Dao.Service</bdi>] كمثيل واحد (<bdi dir="ltr" class="odt-ltr-term">singleton</bdi>). وهذا ما برر اختيار أسماء مساحات الأسماء.
+  <li>السطر 3: تقع طبقة [dao] في مساحة اسم [<bdi dir="ltr" class="odt-ltr-term">Pam.Dao.Service</bdi>]. يمكن إنشاء العناصر الموجودة في مساحة اسم [<bdi dir="ltr" class="odt-ltr-term">Pam.Dao.Entities</bdi>] في مثيلات متعددة. يتم إنشاء العناصر الموجودة في مساحة اسم [<bdi dir="ltr" class="odt-ltr-term">Pam.Dao.Service</bdi>] كمثيل واحد (<bdi dir="ltr" class="odt-ltr-term">singleton</bdi>). وهذا ما برر اختيار أسماء مساحات الأسماء.
   </li>
   <li>السطر 4: تسمى الواجهة [<bdi dir="ltr" class="odt-ltr-term">IPamDao</bdi>]. وهي تحدد ثلاث طرق:
     <ul>
@@ -1069,7 +1069,7 @@
 </code></pre></div>
 
 <ul>
-  <li>السطر 9: تنفذ فئة [<bdi dir="ltr" class="odt-ltr-term">PamDaoSpringNHibernate</bdi>] واجهة طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] [<bdi dir="ltr" class="odt-ltr-term">IPamDao</bdi>] بشكل صحيح. كما أنها مشتقة من فئة <bdi dir="ltr" class="odt-ltr-term">Spring</bdi> [<bdi dir="ltr" class="odt-ltr-term">HibernateDaoSupport</bdi>]. تحتوي هذه الفئة على خاصية [<bdi dir="ltr" class="odt-ltr-term">HibernateTemplate</bdi>] يتم تهيئتها بواسطة تكوين <bdi dir="ltr" class="odt-ltr-term">Spring</bdi> الذي تم إعداده (السطر 2 أدناه):
+  <li>السطر 9: تنفذ فئة [<bdi dir="ltr" class="odt-ltr-term">PamDaoSpringNHibernate</bdi>] واجهة طبقة [dao] [<bdi dir="ltr" class="odt-ltr-term">IPamDao</bdi>] بشكل صحيح. كما أنها مشتقة من فئة <bdi dir="ltr" class="odt-ltr-term">Spring</bdi> [<bdi dir="ltr" class="odt-ltr-term">HibernateDaoSupport</bdi>]. تحتوي هذه الفئة على خاصية [<bdi dir="ltr" class="odt-ltr-term">HibernateTemplate</bdi>] يتم تهيئتها بواسطة تكوين <bdi dir="ltr" class="odt-ltr-term">Spring</bdi> الذي تم إعداده (السطر 2 أدناه):
   </li>
 </ul>
 
@@ -1112,7 +1112,7 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>T Load&lt;T&gt;(object id)
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">يضيف الكيان من النوع <bdi dir="ltr" class="odt-ltr-term">T</bdi> ذي المفتاح الأساسي <i><bdi dir="ltr" class="odt-ltr-term">id</bdi> </i>إلى جلسة <bdi dir="ltr" class="odt-ltr-term">NHibernate.</bdi></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">يضيف الكيان من النوع <bdi dir="ltr" class="odt-ltr-term">T</bdi> ذي المفتاح الأساسي <i>id </i>إلى جلسة <bdi dir="ltr" class="odt-ltr-term">NHibernate.</bdi></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">void</span><span class="w"> </span><span class="n">SaveOrUpdate</span><span class="p">(</span><span class="k">object</span><span class="w"> </span><span class="n">entity</span><span class="p">)</span>
 </code></pre></div>
 </div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">يقوم بإدراج (<bdi dir="ltr" class="odt-ltr-term">INSERT</bdi>) أو تحديث (<bdi dir="ltr" class="odt-ltr-term">UPDATE</bdi>) كائن <i>الكيان </i>اعتمادًا على ما إذا كان يحتوي على مفتاح أساسي (<bdi dir="ltr" class="odt-ltr-term">UPDATE</bdi>) أم لا (<bdi dir="ltr" class="odt-ltr-term">INSERT</bdi>). يمكن تكوين عدم وجود مفتاح أساسي باستخدام السمة `<i><bdi dir="ltr" class="odt-ltr-term">unsaved-values</bdi>` </i>في ملف تكوين الكيان. بعد عملية<i> `<bdi dir="ltr" class="odt-ltr-term">SaveOrUpdate</bdi>`</i>، يكون كائن <i>الكيان</i> موجودًا في جلسة <bdi dir="ltr" class="odt-ltr-term">NHibernate.</bdi></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
@@ -1256,7 +1256,7 @@
 </code></pre></div>
 
 <ul>
-  <li>السطر 11: نطلب من <bdi dir="ltr" class="odt-ltr-term">Spring</bdi> مرجعًا إلى طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>].
+  <li>السطر 11: نطلب من <bdi dir="ltr" class="odt-ltr-term">Spring</bdi> مرجعًا إلى طبقة [dao].
   </li>
   <li>الأسطر 13–15: اختبار طريقة [<bdi dir="ltr" class="odt-ltr-term">GetAllEmployeeIDs</bdi>] لواجهة [<bdi dir="ltr" class="odt-ltr-term">IPamDao</bdi>]
   </li>
@@ -1290,7 +1290,7 @@
 </ul>
 <p><a id="refheading1885341168461456"></a></p>
 <h3 id="223-nunit">2.2.3. <span style="color: #4f81bd">اختبارات الوحدة باستخدام <bdi dir="ltr" class="odt-ltr-term">NUnit</bdi></span></h3>
-<p>سننتقل الآن إلى اختبار وحدة <bdi dir="ltr" class="odt-ltr-term">NUnit.</bdi> سيتطور مشروع <bdi dir="ltr" class="odt-ltr-term">Visual Studio</bdi> لطبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] على النحو التالي:</p>
+<p>سننتقل الآن إلى اختبار وحدة <bdi dir="ltr" class="odt-ltr-term">NUnit.</bdi> سيتطور مشروع <bdi dir="ltr" class="odt-ltr-term">Visual Studio</bdi> لطبقة [dao] على النحو التالي:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000007BD0000027A69148EF6.png" width="680" height="218" style="display:inline-block; margin:4px;width:17.997cm;height:5.761cm;" class="odt-zoomable" data-zoom-src="images/10000000000007BD0000027A69148EF6.png" /></td></tr></table>
 
 <ul>
@@ -1382,7 +1382,7 @@
   </li>
   <li>السطر 12: الفئة مشتقة من فئة الأداة المساعدة <i><bdi dir="ltr" class="odt-ltr-term">AssertionHelper</bdi> </i>في إطار عمل <i><bdi dir="ltr" class="odt-ltr-term">NUnit</bdi> </i>(بدءًا من الإصدار 2.4.6).
   </li>
-  <li>السطر 14: الحقل الخاص [<bdi dir="ltr" class="odt-ltr-term">pamDao</bdi>] هو مثيل للواجهة التي توفر الوصول إلى طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>]. لاحظ أن نوع هذا الحقل هو <b>واجهة</b>، وليس <b>فئة</b>. وهذا يعني أن مثيل [<bdi dir="ltr" class="odt-ltr-term">pamDao</bdi>] يجعل الطرق فقط قابلة للوصول — على وجه التحديد، تلك الموجودة في واجهة [<bdi dir="ltr" class="odt-ltr-term">IPamDao</bdi>].
+  <li>السطر 14: الحقل الخاص [<bdi dir="ltr" class="odt-ltr-term">pamDao</bdi>] هو مثيل للواجهة التي توفر الوصول إلى طبقة [dao]. لاحظ أن نوع هذا الحقل هو <b>واجهة</b>، وليس <b>فئة</b>. وهذا يعني أن مثيل [<bdi dir="ltr" class="odt-ltr-term">pamDao</bdi>] يجعل الطرق فقط قابلة للوصول — على وجه التحديد، تلك الموجودة في واجهة [<bdi dir="ltr" class="odt-ltr-term">IPamDao</bdi>].
   </li>
   <li>الطرق التي يتم اختبارها في الفئة هي تلك التي تحمل السمة [<i><bdi dir="ltr" class="odt-ltr-term">Test</bdi></i>]. بالنسبة لجميع هذه الطرق، تكون عملية الاختبار كما يلي:
     <ul>
@@ -1416,8 +1416,8 @@
 <p>في الأعلى، كانت الاختبارات ناجحة.</p>
 <p><a id="refheading1885361168461456"></a>
 <a id="daodll1"></a></p>
-<h3 id="224-dll-dao">2.2.4. <span style="color: #4f81bd"><strong>إنشاء ملف <bdi dir="ltr" class="odt-ltr-term">DLL</bdi> لطبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] باستخدام</strong></span></h3>
-<p>بمجرد كتابة فئة [<bdi dir="ltr" class="odt-ltr-term">PamDaoNHibernate</bdi>] واختبارها، سنقوم بإنشاء ملف <bdi dir="ltr" class="odt-ltr-term">DLL</bdi> لطبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] على النحو التالي:</p>
+<h3 id="224-dll-dao">2.2.4. <span style="color: #4f81bd"><strong>إنشاء ملف <bdi dir="ltr" class="odt-ltr-term">DLL</bdi> لطبقة [dao] باستخدام</strong></span></h3>
+<p>بمجرد كتابة فئة [<bdi dir="ltr" class="odt-ltr-term">PamDaoNHibernate</bdi>] واختبارها، سنقوم بإنشاء ملف <bdi dir="ltr" class="odt-ltr-term">DLL</bdi> لطبقة [dao] على النحو التالي:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000007910000023BC381A753.png" width="680" height="201" style="display:inline-block; margin:4px;width:17.997cm;height:5.306cm;" class="odt-zoomable" data-zoom-src="images/10000000000007910000023BC381A753.png" /></td></tr></table>
 
 <ul>
