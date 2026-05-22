@@ -657,12 +657,12 @@
 <p><a id="refheading796012061520258"></a></p>
 <h1 id="2-springnhibernate">2. <span style="color: #365f91"><strong><span style="color: #365f91">تكامل <bdi dir="ltr" class="odt-ltr-term">Spring/NHibernate</bdi></span></strong></span></h1>
 <p>يوفر إطار عمل <strong><bdi dir="ltr" class="odt-ltr-term">Spring</bdi></strong> فئات أدوات مساعدة للعمل مع إطار عمل <strong><bdi dir="ltr" class="odt-ltr-term">NHibernate</bdi></strong>. يسهل استخدام هذه الفئات كتابة التعليمات البرمجية للوصول إلى البيانات من نظام إدارة قواعد البيانات. انظر إلى البنية متعددة الطبقات التالية:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000007630000015DFB927A20.png" width="680" height="126" style="display:inline-block; margin:4px;width:17.997cm;height:3.321cm;" class="odt-zoomable" data-zoom-src="images/10000000000007630000015DFB927A20.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000007630000015DFB927A20.png" width="680" height="126" style="display:inline-block; margin:4px;width:17.997cm;height:3.321cm;" class="odt-zoomable" data-zoom-src="images/10000000000007630000015DFB927A20.png" /></td></tr></table>
 
-<p>في الأقسام التالية، سنقوم ببناء طبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>] باستخدام [<bdi dir="ltr" class="odt-ltr-term">Spring</bdi> / <bdi dir="ltr" class="odt-ltr-term">NHibernate</bdi>] من خلال التعليق على كود حل عملي. لن نحاول تغطية جميع التكوينات أو الاستخدامات الممكنة لإطار عمل [<bdi dir="ltr" class="odt-ltr-term">Spring</bdi> / <bdi dir="ltr" class="odt-ltr-term">NHibernate</bdi>]. يمكن للقراء تكييف الحل المقترح مع احتياجاتهم الخاصة بمساعدة وثائق <bdi dir="ltr" class="odt-ltr-term">Spring.NET</bdi> [<a href="https://springframework.net/"><u><span style="color: #0563c1"><bdi dir="ltr" class="odt-ltr-term">Spring.NET</bdi> | الصفحة الرئيسية</span></u></a> ] (ديسمبر 2011).</p>
+<p>في الأقسام التالية، سنقوم ببناء طبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>] باستخدام [<bdi dir="ltr" class="odt-ltr-term">Spring / NHibernate</bdi>] من خلال التعليق على كود حل عملي. لن نحاول تغطية جميع التكوينات أو الاستخدامات الممكنة لإطار عمل [<bdi dir="ltr" class="odt-ltr-term">Spring / NHibernate</bdi>]. يمكن للقراء تكييف الحل المقترح مع احتياجاتهم الخاصة بمساعدة وثائق <bdi dir="ltr" class="odt-ltr-term">Spring.NET</bdi> [<a href="https://springframework.net/"><u><span style="color: #0563c1"><bdi dir="ltr" class="odt-ltr-term">Spring.NET</bdi> | الصفحة الرئيسية</span></u></a> ] (ديسمبر 2011).</p>
 <p><a id="refheading1885161168461456"></a></p>
 <h2 id="21-dao">2.1. <span style="color: #4f81bd">طبقة الوصول إلى البيانات [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>]</span></h2>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000075D0000015B50BD7686.png" width="680" height="125" style="display:inline-block; margin:4px;width:17.997cm;height:3.313cm;" class="odt-zoomable" data-zoom-src="images/100000000000075D0000015B50BD7686.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000075D0000015B50BD7686.png" width="680" height="125" style="display:inline-block; margin:4px;width:17.997cm;height:3.313cm;" class="odt-zoomable" data-zoom-src="images/100000000000075D0000015B50BD7686.png" /></td></tr></table>
 
 <p>قاعدة البيانات هي قاعدة بيانات <bdi dir="ltr" class="odt-ltr-term">MySQL</bdi> [<bdi dir="ltr" class="odt-ltr-term">dbpam</bdi>_nhibernate] التي تم عرضها بالفعل في القسم<a href="#bd-mysql-nhibernate"><u><span style="color: #0563c1"> 1.2</span></u></a>. تنفذ طبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>] واجهة <bdi dir="ltr" class="odt-ltr-term">C#</bdi> التالية:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-csharp">
@@ -684,7 +684,7 @@
 <a id="vsdaoibatis11"></a></p>
 <h3 id="211-visual-studio-c-dao">2.1.1. <span style="color: #4f81bd">مشروع <bdi dir="ltr" class="odt-ltr-term">Visual Studio C#</bdi> لطبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>]</span></h3>
 <p>مشروع <bdi dir="ltr" class="odt-ltr-term">Visual Studio</bdi> لطبقة [dao] هو كما يلي:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000070E000002544BB5E9A8.png" width="680" height="224" style="display:inline-block; margin:4px;width:17.997cm;height:5.939cm;" class="odt-zoomable" data-zoom-src="images/100000000000070E000002544BB5E9A8.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000070E000002544BB5E9A8.png" width="680" height="224" style="display:inline-block; margin:4px;width:17.997cm;height:5.939cm;" class="odt-zoomable" data-zoom-src="images/100000000000070E000002544BB5E9A8.png" /></td></tr></table>
 
 <ul>
   <li>في [1]، المشروع ككل
@@ -729,7 +729,7 @@
 <p><a id="refheading1885201168461456"></a></p>
 <h3 id="212-c">2.1.2. <span style="color: #4f81bd">تكوين مشروع <bdi dir="ltr" class="odt-ltr-term">C#</bdi></span></h3>
 <p>يتكون المشروع على النحو التالي:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000031D00000148E93FB6ED.png" width="399" height="164" style="display:inline-block; margin:4px;width:10.545cm;height:4.339cm;" class="odt-zoomable" data-zoom-src="images/100000000000031D00000148E93FB6ED.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000031D00000148E93FB6ED.png" width="399" height="164" style="display:inline-block; margin:4px;width:10.545cm;height:4.339cm;" class="odt-zoomable" data-zoom-src="images/100000000000031D00000148E93FB6ED.png" /></td></tr></table>
 
 <ul>
   <li>في [1]، اسم تجميع المشروع هو [<bdi dir="ltr" class="odt-ltr-term">pam-dao-spring-nhibernate</bdi>]. يظهر هذا الاسم في ملفات تكوين المشروع المختلفة.
@@ -737,7 +737,7 @@
 </ul>
 <p><a id="refheading1885221168461456"></a></p>
 <h3 id="213-dao">2.1.3. <span style="color: #4f81bd">الكيانات في طبقة [dao]</span></h3>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004D6000001968213506A.png" width="619" height="203" style="display:inline-block; margin:4px;width:16.378cm;height:5.371cm;" class="odt-zoomable" data-zoom-src="images/10000000000004D6000001968213506A.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000004D6000001968213506A.png" width="619" height="203" style="display:inline-block; margin:4px;width:16.378cm;height:5.371cm;" class="odt-zoomable" data-zoom-src="images/10000000000004D6000001968213506A.png" /></td></tr></table>
 
 <p>تم تجميع الكيانات (الكائنات) المطلوبة لطبقة [dao] في مجلد [<bdi dir="ltr" class="odt-ltr-term">entities</bdi>] [1] الخاص بالمشروع. هذه الكيانات هي نفسها الموجودة في المشروع السابق (انظر القسم<a href="#nhibernate-demos-mapping"><u><span style="color: #0563c1"> 1.3.2</span></u></a>)، مع اختلاف واحد في ملفات تكوين <bdi dir="ltr" class="odt-ltr-term">NHibernate.</bdi> خذ على سبيل المثال ملف [<bdi dir="ltr" class="odt-ltr-term">Employee.hbm.xml</bdi>]:</p>
 <ul>
@@ -805,12 +805,12 @@
 
 <p>تم اشتقاق فئة [<bdi dir="ltr" class="odt-ltr-term">PamException</bdi>] من فئة [<bdi dir="ltr" class="odt-ltr-term">Exception</bdi>] (السطر 4) لإضافة رمز خطأ (السطر 7).</p>
 <p><a id="refheading1885241168461456"></a></p>
-<h3 id="214-spring-nhibernate">2.1.4. <span style="color: #4f81bd">تكوين <bdi dir="ltr" class="odt-ltr-term">Spring</bdi> / <bdi dir="ltr" class="odt-ltr-term">NHibernate</bdi></span></h3>
+<h3 id="214-spring-nhibernate">2.1.4. <span style="color: #4f81bd">تكوين <bdi dir="ltr" class="odt-ltr-term">Spring / NHibernate</bdi></span></h3>
 <p>لنعد إلى مشروع <bdi dir="ltr" class="odt-ltr-term">Visual C#:</bdi></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002370000011E2410CBB3.png" width="284" height="143" style="display:inline-block; margin:4px;width:7.502cm;height:3.784cm;" class="odt-zoomable" data-zoom-src="images/10000000000002370000011E2410CBB3.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000002370000011E2410CBB3.png" width="284" height="143" style="display:inline-block; margin:4px;width:7.502cm;height:3.784cm;" class="odt-zoomable" data-zoom-src="images/10000000000002370000011E2410CBB3.png" /></td></tr></table>
 
 <ul>
-  <li>في [1]، يقوم ملفا [<bdi dir="ltr" class="odt-ltr-term">App.config</bdi>] و[<bdi dir="ltr" class="odt-ltr-term">Dao.xml</bdi>] بتكوين تكامل <bdi dir="ltr" class="odt-ltr-term">Spring</bdi> / <bdi dir="ltr" class="odt-ltr-term">NHibernate</bdi>
+  <li>في [1]، يقوم ملفا [<bdi dir="ltr" class="odt-ltr-term">App.config</bdi>] و[<bdi dir="ltr" class="odt-ltr-term">Dao.xml</bdi>] بتكوين تكامل <bdi dir="ltr" class="odt-ltr-term">Spring / NHibernate</bdi>
   </li>
 </ul>
 <p><a id="refheading2522201168461456"></a>
@@ -1097,28 +1097,28 @@
 <p><a id="refheading2522261168461456"></a></p>
 <h4 id="2152-hibernatetemplate">2.1.5.2. <span style="color: #4f81bd">طرق مفيدة لفئة <bdi dir="ltr" class="odt-ltr-term">HibernateTemplate</bdi></span></h4>
 <p>سنستخدم الطرق التالية لفئة <em><bdi dir="ltr" class="odt-ltr-term">HibernateTemplate</bdi></em>:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>IList&lt;T&gt; Find&lt;T&gt;(string hql_query)
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">تنفيذ استعلام <bdi dir="ltr" class="odt-ltr-term">HQL</bdi> وإرجاع قائمة من الكائنات من النوع <bdi dir="ltr" class="odt-ltr-term">T</bdi></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">تنفيذ استعلام <bdi dir="ltr" class="odt-ltr-term">HQL</bdi> وإرجاع قائمة من الكائنات من النوع <bdi dir="ltr" class="odt-ltr-term">T</bdi></div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>IList&lt;T&gt; Find&lt;T&gt;(string hql_query, object[])
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">يُنفذ استعلام <bdi dir="ltr" class="odt-ltr-term">HQL</bdi> معلمات بواسطة ?. يتم توفير قيم هذه المعلمات بواسطة مصفوفة الكائنات.</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">يُنفذ استعلام <bdi dir="ltr" class="odt-ltr-term">HQL</bdi> معلمات بواسطة ?. يتم توفير قيم هذه المعلمات بواسطة مصفوفة الكائنات.</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>IList&lt;T&gt; LoadAll&lt;T&gt;()
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">تُرجع جميع الكيانات من النوع <i><bdi dir="ltr" class="odt-ltr-term">T</bdi></i></div></td></tr></table>
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">تُرجع جميع الكيانات من النوع <i><bdi dir="ltr" class="odt-ltr-term">T</bdi></i></div></td></tr></table>
 
 <p>هناك طرق أخرى مفيدة لن تتاح لنا الفرصة لاستخدامها، والتي تتيح لك استرداد الكيانات وحفظها وتحديثها وحذفها:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>T Load&lt;T&gt;(object id)
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">يضيف الكيان من النوع <bdi dir="ltr" class="odt-ltr-term">T</bdi> ذي المفتاح الأساسي <i>id </i>إلى جلسة <bdi dir="ltr" class="odt-ltr-term">NHibernate.</bdi></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">يضيف الكيان من النوع <bdi dir="ltr" class="odt-ltr-term">T</bdi> ذي المفتاح الأساسي <i>id </i>إلى جلسة <bdi dir="ltr" class="odt-ltr-term">NHibernate.</bdi></div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">void</span><span class="w"> </span><span class="n">SaveOrUpdate</span><span class="p">(</span><span class="k">object</span><span class="w"> </span><span class="n">entity</span><span class="p">)</span>
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">يقوم بإدراج (<bdi dir="ltr" class="odt-ltr-term">INSERT</bdi>) أو تحديث (<bdi dir="ltr" class="odt-ltr-term">UPDATE</bdi>) كائن <i>الكيان </i>اعتمادًا على ما إذا كان يحتوي على مفتاح أساسي (<bdi dir="ltr" class="odt-ltr-term">UPDATE</bdi>) أم لا (<bdi dir="ltr" class="odt-ltr-term">INSERT</bdi>). يمكن تكوين عدم وجود مفتاح أساسي باستخدام السمة `<i><bdi dir="ltr" class="odt-ltr-term">unsaved-values</bdi>` </i>في ملف تكوين الكيان. بعد عملية<i> `<bdi dir="ltr" class="odt-ltr-term">SaveOrUpdate</bdi>`</i>، يكون كائن <i>الكيان</i> موجودًا في جلسة <bdi dir="ltr" class="odt-ltr-term">NHibernate.</bdi></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">يقوم بإدراج (<bdi dir="ltr" class="odt-ltr-term">INSERT</bdi>) أو تحديث (<bdi dir="ltr" class="odt-ltr-term">UPDATE</bdi>) كائن <i>الكيان </i>اعتمادًا على ما إذا كان يحتوي على مفتاح أساسي (<bdi dir="ltr" class="odt-ltr-term">UPDATE</bdi>) أم لا (<bdi dir="ltr" class="odt-ltr-term">INSERT</bdi>). يمكن تكوين عدم وجود مفتاح أساسي باستخدام السمة `<i><bdi dir="ltr" class="odt-ltr-term">unsaved-values</bdi>` </i>في ملف تكوين الكيان. بعد عملية<i> `<bdi dir="ltr" class="odt-ltr-term">SaveOrUpdate</bdi>`</i>، يكون كائن <i>الكيان</i> موجودًا في جلسة <bdi dir="ltr" class="odt-ltr-term">NHibernate.</bdi></div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="ow">void</span><span class="w"> </span><span class="nx">Delete</span><span class="p">(</span><span class="nx">object</span><span class="w"> </span><span class="nx">entity</span><span class="p">)</span>
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">يزيل كائن <i>الكيان </i>من جلسة <bdi dir="ltr" class="odt-ltr-term">NHibernate.</bdi></div></td></tr></table>
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">يزيل كائن <i>الكيان </i>من جلسة <bdi dir="ltr" class="odt-ltr-term">NHibernate.</bdi></div></td></tr></table>
 
 <p><a id="refheading2522281168461456"></a></p>
 <h4 id="2153-init">2.1.5.3. <span style="color: #4f81bd">تنفيذ طريقة <bdi dir="ltr" class="odt-ltr-term">init</bdi></span></h4>
@@ -1195,7 +1195,7 @@
 <p><a id="refheading1885301168461456"></a></p>
 <h3 id="221-visual-studio">2.2.1. <span style="color: #4f81bd">مشروع <bdi dir="ltr" class="odt-ltr-term">Visual Studio</bdi></span></h3>
 <p>تم عرض مشروع <bdi dir="ltr" class="odt-ltr-term">Visual Studio</bdi> بالفعل. للتذكير:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000007220000023BDAB3C604.png" width="680" height="213" style="display:inline-block; margin:4px;width:17.997cm;height:5.629cm;" class="odt-zoomable" data-zoom-src="images/10000000000007220000023BDAB3C604.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000007220000023BDAB3C604.png" width="680" height="213" style="display:inline-block; margin:4px;width:17.997cm;height:5.629cm;" class="odt-zoomable" data-zoom-src="images/10000000000007220000023BDAB3C604.png" /></td></tr></table>
 
 <ul>
   <li>في [1]، المشروع ككل
@@ -1206,7 +1206,7 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000049E000001B908870843.png" width="591" height="220" style="display:inline-block; margin:4px;width:15.637cm;height:5.833cm;" class="odt-zoomable" data-zoom-src="images/100000000000049E000001B908870843.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000049E000001B908870843.png" width="591" height="220" style="display:inline-block; margin:4px;width:15.637cm;height:5.833cm;" class="odt-zoomable" data-zoom-src="images/100000000000049E000001B908870843.png" /></td></tr></table>
 
 <ul>
   <li>في [4]، لم يتم إنشاء الملف [<bdi dir="ltr" class="odt-ltr-term">NUnit.cs</bdi>].
@@ -1218,7 +1218,7 @@
 <p><a id="refheading1885321168461456"></a></p>
 <h3 id="222-maincs">2.2.2. <span style="color: #4f81bd">برنامج الاختبار الخاص بوحدة التحكم [<bdi dir="ltr" class="odt-ltr-term">Main.cs</bdi>]</span></h3>
 <p>يعمل برنامج الاختبار [<bdi dir="ltr" class="odt-ltr-term">Main.cs</bdi>] في البنية التالية:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006C700000150295F2606.png" width="680" height="132" style="display:inline-block; margin:4px;width:17.997cm;height:3.485cm;" class="odt-zoomable" data-zoom-src="images/10000000000006C700000150295F2606.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000006C700000150295F2606.png" width="680" height="132" style="display:inline-block; margin:4px;width:17.997cm;height:3.485cm;" class="odt-zoomable" data-zoom-src="images/10000000000006C700000150295F2606.png" /></td></tr></table>
 
 <p>وهو مسؤول عن اختبار أساليب واجهة [<bdi dir="ltr" class="odt-ltr-term">IPamDao</bdi>]. ومن الأمثلة الأساسية على ذلك ما يلي:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-csharp">
@@ -1291,7 +1291,7 @@
 <p><a id="refheading1885341168461456"></a></p>
 <h3 id="223-nunit">2.2.3. <span style="color: #4f81bd">اختبارات الوحدة باستخدام <bdi dir="ltr" class="odt-ltr-term">NUnit</bdi></span></h3>
 <p>سننتقل الآن إلى اختبار وحدة <bdi dir="ltr" class="odt-ltr-term">NUnit.</bdi> سيتطور مشروع <bdi dir="ltr" class="odt-ltr-term">Visual Studio</bdi> لطبقة [dao] على النحو التالي:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000007BD0000027A69148EF6.png" width="680" height="218" style="display:inline-block; margin:4px;width:17.997cm;height:5.761cm;" class="odt-zoomable" data-zoom-src="images/10000000000007BD0000027A69148EF6.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000007BD0000027A69148EF6.png" width="680" height="218" style="display:inline-block; margin:4px;width:17.997cm;height:5.761cm;" class="odt-zoomable" data-zoom-src="images/10000000000007BD0000027A69148EF6.png" /></td></tr></table>
 
 <ul>
   <li>في [1]، برنامج الاختبار [<bdi dir="ltr" class="odt-ltr-term">NUnit.cs</bdi>]
@@ -1409,7 +1409,7 @@
 </ul>
 
 <p>يؤدي إنشاء المشروع إلى إنشاء ملف <bdi dir="ltr" class="odt-ltr-term">DLL</bdi> [<bdi dir="ltr" class="odt-ltr-term">pam-dao-spring-nhibernate.dll</bdi>] في المجلد [<bdi dir="ltr" class="odt-ltr-term">bin/Release</bdi>]:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000027E00000260BF2EDDD4.png" width="319" height="304" style="display:inline-block; margin:4px;width:8.44cm;height:8.043cm;" class="odt-zoomable" data-zoom-src="images/100000000000027E00000260BF2EDDD4.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000027E00000260BF2EDDD4.png" width="319" height="304" style="display:inline-block; margin:4px;width:8.44cm;height:8.043cm;" class="odt-zoomable" data-zoom-src="images/100000000000027E00000260BF2EDDD4.png" /></td></tr></table>
 
 <p>نقوم بتحميل ملف <bdi dir="ltr" class="odt-ltr-term">DLL</bdi> [<bdi dir="ltr" class="odt-ltr-term">pam-dao-spring-nhibernate.dll</bdi>] باستخدام أداة [<bdi dir="ltr" class="odt-ltr-term">NUnit-Gui</bdi>]، الإصدار 2.5، ثم نجري الاختبارات:</p>
 <p><img src="images/100000000000019F000000B086334CAA.png" width="293" height="124" style="width:7.74cm;height:3.283cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000019F000000B086334CAA.png" /></p>
@@ -1418,7 +1418,7 @@
 <a id="daodll1"></a></p>
 <h3 id="224-dll-dao">2.2.4. <span style="color: #4f81bd"><strong>إنشاء ملف <bdi dir="ltr" class="odt-ltr-term">DLL</bdi> لطبقة [dao] باستخدام</strong></span></h3>
 <p>بمجرد كتابة فئة [<bdi dir="ltr" class="odt-ltr-term">PamDaoNHibernate</bdi>] واختبارها، سنقوم بإنشاء ملف <bdi dir="ltr" class="odt-ltr-term">DLL</bdi> لطبقة [dao] على النحو التالي:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000007910000023BC381A753.png" width="680" height="201" style="display:inline-block; margin:4px;width:17.997cm;height:5.306cm;" class="odt-zoomable" data-zoom-src="images/10000000000007910000023BC381A753.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000007910000023BC381A753.png" width="680" height="201" style="display:inline-block; margin:4px;width:17.997cm;height:5.306cm;" class="odt-zoomable" data-zoom-src="images/10000000000007910000023BC381A753.png" /></td></tr></table>
 
 <ul>
   <li>[1]، يتم استبعاد برامج الاختبار من تجميع المشروع
