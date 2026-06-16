@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://stahe.github.io/ar-nhibernate-dotnet-dec-2011/lkhl.html">
       
       
-        <link rel="prev" href="tkml-springnhibernate.html">
+        <link rel="prev" href="tkml-spring--nhibernate.html">
       
       
       
@@ -303,14 +303,14 @@
   
   
     <li class="md-nav__item">
-      <a href="mqdm-l-nhibernate-orm.html" class="md-nav__link">
+      <a href="mqdm-l-orm-nhibernate.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    1. مقدمة إلى NHibernate ORM
+    1. مقدمة إلى ORM NHibernate
   
 
     
@@ -330,14 +330,14 @@
   
   
     <li class="md-nav__item">
-      <a href="tkml-springnhibernate.html" class="md-nav__link">
+      <a href="tkml-spring--nhibernate.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    2. تكامل Spring/NHibernate
+    2. تكامل Spring / NHibernate
   
 
     
@@ -404,18 +404,18 @@
 
 
 
-<p><a id="refheading867052117501572"></a></p>
+<p><span id="refheading867052117501572" name="refheading867052117501572" class="odt-bookmark-anchor"></span></p>
 <h1 id="3">3. <span style="color: #365f91">الخلاصة</span></h1>
-<p>لقد قدمنا المفاهيم الأساسية لـ <bdi dir="ltr" class="odt-ltr-term">NHibernate.</bdi> يتوفر كود العينة |هنا| في شكل مشروعين لـ <bdi dir="ltr" class="odt-ltr-term">Visual Studio</bdi> 2010.</p>
-<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000070B0000035CC6A3892B.png" width="680" height="324" style="display:inline-block; margin:4px;width:17.997cm;height:8.585cm;" class="odt-zoomable" data-zoom-src="images/100000000000070B0000035CC6A3892B.png" /></td></tr></table>
+<p>لقد قدمنا المفاهيم المهمة في <bdi dir="ltr" class="odt-ltr-term">Nhibernate.</bdi> يتوفر كود الأمثلة |<bdi dir="ltr" class="odt-ltr-term">ICI</bdi>| في شكل مشروعين لـ <bdi dir="ltr" class="odt-ltr-term">Visual Studio</bdi> 2010.</p>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000070B0000035CC6A3892B.png" width="680" height="324" style="display:inline-block; margin:4px;width:17.997cm;height:8.583cm;" class="odt-zoomable" data-zoom-src="images/100000000000070B0000035CC6A3892B.png" /></td></tr></table>
 
-<p>يتضمن مشروع [<bdi dir="ltr" class="odt-ltr-term">pam-nhibernate-demos</bdi>] ثلاثة ملفات تكوين [1]:</p>
+<p>يحتوي المشروع [<bdi dir="ltr" class="odt-ltr-term">pam-nhibernate-demos</bdi>] على ثلاثة ملفات تكوين [1]:</p>
 <ul>
-  <li>واحد لنظام إدارة قواعد البيانات <bdi dir="ltr" class="odt-ltr-term">MySQL</bdi> [<bdi dir="ltr" class="odt-ltr-term">App.config.MySQL</bdi>]
+  <li>واحد لـ <bdi dir="ltr" class="odt-ltr-term">SGBD MySQL</bdi> [<bdi dir="ltr" class="odt-ltr-term">App.config.MySQL</bdi>]
   </li>
-  <li>واحد لنظام إدارة قواعد البيانات <bdi dir="ltr" class="odt-ltr-term">SQL Server</bdi> [<bdi dir="ltr" class="odt-ltr-term">App.config.SQLServer</bdi>]
+  <li>واحد لـ <bdi dir="ltr" class="odt-ltr-term">SGBD SQL Server</bdi> [<bdi dir="ltr" class="odt-ltr-term">App.config.SQLServer</bdi>]
   </li>
-  <li>واحد لنظام إدارة قواعد البيانات <bdi dir="ltr" class="odt-ltr-term">SQL Server Compact</bdi> [<bdi dir="ltr" class="odt-ltr-term">App.config.SQLServerCe</bdi>]
+  <li>واحد لـ <bdi dir="ltr" class="odt-ltr-term">SGBD SQL Server Compact</bdi> [<bdi dir="ltr" class="odt-ltr-term">App.config.SQLServerCe</bdi>]
   </li>
 </ul>
 
@@ -424,7 +424,7 @@
 <ul>
   <li>يحتوي المجلد [<bdi dir="ltr" class="odt-ltr-term">databases</bdi>] [3] 
     <ul>
-      <li>نص برمجي <bdi dir="ltr" class="odt-ltr-term">SQL</bdi> لإنشاء قاعدة بيانات <bdi dir="ltr" class="odt-ltr-term">MySQL</bdi>
+      <li>نص برمجي <bdi dir="ltr" class="odt-ltr-term">SQL</bdi> لإنشاء قاعدة البيانات <bdi dir="ltr" class="odt-ltr-term">MySQL</bdi>
       </li>
       <li>قاعدة بيانات <bdi dir="ltr" class="odt-ltr-term">SQL Server</bdi> 2005
       </li>
@@ -432,37 +432,37 @@
       </li>
     </ul>
   </li>
-  <li>يحتوي المجلد [<bdi dir="ltr" class="odt-ltr-term">libnet4</bdi>] [4] على ملفات <bdi dir="ltr" class="odt-ltr-term">DLL</bdi> المطلوبة لمشروع <bdi dir="ltr" class="odt-ltr-term">Visual Studio.</bdi>
+  <li>المجلد [<bdi dir="ltr" class="odt-ltr-term">libnet4</bdi>] [4] يحتوي على ملفات <bdi dir="ltr" class="odt-ltr-term">DLL</bdi> اللازمة لمشروع <bdi dir="ltr" class="odt-ltr-term">Visual Studio.</bdi>
   </li>
-  <li>المجلدان [<bdi dir="ltr" class="odt-ltr-term">pam-nhibernate-demos</bdi>] و [<bdi dir="ltr" class="odt-ltr-term">pam-spring-nhibernate-dao</bdi>] هما مجلدا مشروعي <bdi dir="ltr" class="odt-ltr-term">Visual Studio</bdi> 2010 اللذين تمت مناقشتهما سابقًا.
+  <li>المجلدان [<bdi dir="ltr" class="odt-ltr-term">pam-nhibernate-demos</bdi>] و [<bdi dir="ltr" class="odt-ltr-term">pam-spring-nhibernate-dao</bdi>] هما مجلدا مشروعي <bdi dir="ltr" class="odt-ltr-term">Visual Studio</bdi> 2010 اللذين تمت دراستهما سابقًا.
   </li>
 </ul>
 
-<p>يمكن استكشاف هذا المستند بشكل أعمق من خلال دراسة حالة:</p>
+<p>يمكن توسيع نطاق هذا المستند لاحقًا من خلال دراسة حالة:</p>
 <ul>
-  <li><b>إنشاء تطبيق ثلاثي الطبقات باستخدام <bdi dir="ltr" class="odt-ltr-term">ASP.NET</bdi> و <bdi dir="ltr" class="odt-ltr-term">C#</bdi> و <bdi dir="ltr" class="odt-ltr-term">Spring.net</bdi> و <bdi dir="ltr" class="odt-ltr-term">Nhibernate</bdi> </b>[<a href="https://stahe.github.io/en-pam-aspnet-juin-2010/"><u><span style="color: #0563c1"><bdi dir="ltr" class="odt-ltr-term">https://stahe.github.io/en-pam-aspnet-juin-2010/</bdi></span></u></a>]
+  <li><b>إنشاء تطبيق ثلاثي الطبقات باستخدام <bdi dir="ltr" class="odt-ltr-term">ASP.NET</bdi> و <bdi dir="ltr" class="odt-ltr-term">C#</bdi> و <bdi dir="ltr" class="odt-ltr-term">Spring.net</bdi> و <bdi dir="ltr" class="odt-ltr-term">Nhibernate</bdi> </b>[<bdi dir="ltr" class="odt-ltr-term">http://tahe.developpez.com/dotnet/pam-aspnet/</bdi>]
   </li>
 </ul>
 
-<p>يتميز التطبيق في دراسة الحالة هذه بالبنية ثلاثية المستويات التالية:</p>
-<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000076F0000015CFFB7ECD1.png" width="680" height="124" style="display:inline-block; margin:4px;width:17.997cm;height:3.291cm;" class="odt-zoomable" data-zoom-src="images/100000000000076F0000015CFFB7ECD1.png" /></td></tr></table>
+<p>تتميز تطبيق هذه الدراسة الإفرادية بالبنية ثلاثية الطبقات التالية:</p>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000076F0000015CFFB7ECD1.png" width="680" height="124" style="display:inline-block; margin:4px;width:17.997cm;height:3.29cm;" class="odt-zoomable" data-zoom-src="images/100000000000076F0000015CFFB7ECD1.png" /></td></tr></table>
 
 <ul>
-  <li>تتولى طبقة [1-<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>] (<bdi dir="ltr" class="odt-ltr-term">DAO</bdi> = كائن الوصول إلى البيانات) الوصول إلى البيانات. يتم تخزين البيانات في قاعدة بيانات. تستخدم طبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>] إطار عمل <bdi dir="ltr" class="odt-ltr-term">NHibernate</bdi> للوصول إلى البيانات.
+  <li>تتولى الطبقة [1-dao] (dao=<bdi dir="ltr" class="odt-ltr-term">Data Access Object</bdi>) الوصول إلى البيانات. يتم وضع هذه البيانات في قاعدة بيانات. تستخدم الطبقة [dao] إطار عمل <bdi dir="ltr" class="odt-ltr-term">Nhibernate</bdi> للوصول إلى البيانات.
   </li>
-  <li>تتولى طبقة [2-<bdi dir="ltr" class="odt-ltr-term">business</bdi>] معالجة منطق الأعمال للتطبيق، وتحديدًا حسابات الرواتب.
+  <li>تتولى الطبقة [2-<bdi dir="ltr" class="odt-ltr-term">métier</bdi>] الجانب العملي للتطبيق، أي حساب الرواتب.
   </li>
-  <li>تتولى طبقة [3-<bdi dir="ltr" class="odt-ltr-term">presentation</bdi>] عرض البيانات للمستخدم وتنفيذ طلبات المستخدم. هذه طبقة ويب/<bdi dir="ltr" class="odt-ltr-term">ASP.NET.</bdi>
+  <li>تتولى الطبقة [3-<bdi dir="ltr" class="odt-ltr-term">présentation</bdi>] عرض البيانات للمستخدم وتنفيذ طلباته. وهي طبقة ويب / <bdi dir="ltr" class="odt-ltr-term">ASP.NET.</bdi>
   </li>
-  <li>تتمتع الطبقات الثلاث بالاستقلالية من خلال استخدام واجهات .<bdi dir="ltr" class="odt-ltr-term">NET</bdi>
+  <li>أصبحت الطبقات الثلاث مستقلة بفضل استخدام واجهات .<bdi dir="ltr" class="odt-ltr-term">NET</bdi>
   </li>
-  <li>يتم التعامل مع تكامل الطبقات المختلفة بواسطة <b><bdi dir="ltr" class="odt-ltr-term">Spring.NET</bdi></b>
+  <li>يتم تحقيق تكامل الطبقات المختلفة بواسطة <b><bdi dir="ltr" class="odt-ltr-term">Spring.NET</bdi></b>
   </li>
 </ul>
 
-<p>وبالطبع، يمكنك قراءة الكتب المرجعية مثل تلك المذكورة في بداية هذا المستند:</p>
+<p>وبالطبع، يمكن قراءة كتب مرجعية مثل تلك المذكورة في بداية هذا المستند:</p>
 <hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="top" />
-<p><strong>العنوان</strong>: <bdi dir="ltr" class="odt-ltr-term">NHibernate in Action</bdi>، <strong>المؤلف</strong>: <bdi dir="ltr" class="odt-ltr-term">Pierre-Henri Kuaté</bdi>، <strong>الناشر</strong>: <bdi dir="ltr" class="odt-ltr-term">Manning</bdi>، <strong>رقم <bdi dir="ltr" class="odt-ltr-term">ISBN-13</bdi></strong>: 978-1932394924</p>
+<p><strong>العنوان</strong>: <bdi dir="ltr" class="odt-ltr-term">NHibernate in Action</bdi>، <strong>المؤلف</strong>: <bdi dir="ltr" class="odt-ltr-term">Pierre-Henri Kuaté</bdi>، <strong>الناشر</strong>: <bdi dir="ltr" class="odt-ltr-term">Manning</bdi>، <strong><bdi dir="ltr" class="odt-ltr-term">ISBN-13</bdi></strong>: 978-1932394924</p>
 <hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="bottom" />
 
 
